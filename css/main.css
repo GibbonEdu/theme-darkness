@@ -1027,6 +1027,12 @@ ul.token-input-list-facebook input {
 	background-color: #666!important ;
 }
 
+td.hiddenReveal, div.hiddenReveal {
+	background: none; 
+	background-color: #333;
+}
+
+/* Timetable styles */
 th.ttCalendarBar {
 	vertical-align: top; 
 	width: 100%; 
@@ -1034,8 +1040,62 @@ th.ttCalendarBar {
 	background-image: none!important; 
 	background-color: #333!important
 }
-
-td.hiddenReveal, div.hiddenReveal {
-	background: none; 
-	background-color: #EDF7FF;
+span.ttSchoolCalendar {
+	color: #fff;
+	font-weight: bold; 
+	margin: 0px -2px 0px 5px; 
+	background-color: rgb(51,153,0); 
+	padding: 5px 7px; 
+	border: 1px solid #555
+}
+div.ttSchoolCalendar {
+	background-color: rgb(51,153,0) ;
+	color: #fff; 
+	font-weight: bold ;
+}
+span.ttPersonalCalendar {
+	color: #fff;
+	font-weight: bold; 
+	margin: 0px -2px 0px 5px; 
+	background-color: rgb(103,153,207); 
+	padding: 5px 7px; 
+	border: 1px solid #555;
+}
+div.ttPersonalCalendar {
+	background-color: rgb(103,153,207); 
+	color: #fff; 
+	font-weight: bold ;
+}
+div.ttClosure {
+	border: 1px solid rgb(136,136,136);
+	background-color: #AA7278;
+	color: #fff; 
+	border: 1px solid rgb(136,136,136) ;
+}
+div.ttGeneric {
+	background-color: #000;
+	color: #bbb; 
+	border: 1px solid rgb(136,136,136) ;
+}
+div.ttCurrent {
+	background-color: rgb(179,239,194) ;
+	color: rgb(0,0,0); 
+	border: 1px solid rgb(136,136,136) ;
+}
+div.ttLesson {
+	background-color: #000;
+	color: #bbb; 
+	border: 1px solid rgb(136,136,136) ;
+}
+div.ttPeriod {
+	color: #fff;
+	border: 1px solid rgb(136,136,136) ;
+	background-color: #333 ;
+}
+div.ttPeriodCurrent {
+	color: rgb(0,0,0);
+	border: 1px solid rgb(136,136,136) ;
+	background-color: #339900!important ;
+	background: -webkit-gradient(linear, left top, left bottom, from(#339900), to(#2E8400))!important;
+	background: -moz-linear-gradient(top,  #339900,  #2E8400)!important;
 }

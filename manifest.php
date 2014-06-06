@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //Basica variables
 $name="Darkness" ;
 $description="A darker Gibbon" ;
-$version="1.0.00" ;
+$version="1.0.02" ;
 $author="Ross Parker" ;
 $url="http://rossparker.org" ;
 ?>
