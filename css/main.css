@@ -669,7 +669,7 @@ input[type="button"] {
 input[type="button"].buttonAsLink {
 	border: none;
 	background: none ;
-	color:#c00;
+	color:#fff;
 	height: 28px;
 	font-size: 13px ;
 }
@@ -706,7 +706,7 @@ input[type="reset"] {
 
 input[type="submit"].buttonLink {
 	background: none; 
-	color: #c00; 
+	color: #fff; 
 	border: none; 
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight: normal; 
