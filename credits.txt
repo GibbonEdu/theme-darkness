@@ -1,5 +1,3 @@
-<?php
-/*
 Gibbon, Flexible & Open School System
 Copyright (C) 2010, Ross Parker
 
@@ -15,14 +13,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
 
-//This file describes the module, including database tables
 
-//Basic variables
-$name="Darkness" ;
-$description="A dark version of Gibbon's 2015 look and feel...just for dark lovely teens." ;
-$version="1.0.00" ;
-$author="Ross Parker" ;
-$url="http://rossparker.org" ;
-?>
+THEME CREDITS
+-------------
+Default background image (Aurora Borealis stock) by ForestWander on Wikimedia Commons
+	Shared under CC BY-SA
+	Downloaded from http://commons.wikimedia.org/wiki/File:Summit-lake-wv-night-sky-reflection_-_West_Virginia_-_ForestWander.jpg
