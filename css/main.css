@@ -220,7 +220,14 @@ div.minorLinks {
 	color: #fff;
 	font-size: 80%; 
 	font-weight: normal; 
-	height: 38px;
+}
+img.minorLinkIcon {
+	height: 38px ;
+	max-height: 38px ;
+}
+img.minorLinkIconLarge {
+	height: 75px ;
+	max-height: 75px ;
 }
 
 div.minorLinks a {
