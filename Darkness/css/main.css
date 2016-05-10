@@ -584,7 +584,7 @@ tr.past, tr.past td, div.past {
 	background: -webkit-gradient(linear, left top, left bottom, from(#F8D1CD), to(#F6CECB))!important;
 	background: -moz-linear-gradient(top,  #F8D1CD,  #F6CECB)!important;	
 }
-tr.error, tr.error td, div.erorr {
+tr.error, tr.error td, div.error {
 	background-color: #F6CECB!important ;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F8D1CD), to(#F6CECB))!important;
 	background: -moz-linear-gradient(top,  #F8D1CD,  #F6CECB)!important;
@@ -592,6 +592,10 @@ tr.error, tr.error td, div.erorr {
 tr.warning, tr.warning td {
 	background: none!important ;
 	background-color: #FFD2A9!important ;
+}
+tr.info, tr.info td, div.info, td.info {
+	background: none!important ;
+	background-color: #333!important ;
 }
 tr.dull, tr.dull td, div.dull {
 	background: none!important ;
@@ -813,6 +817,15 @@ div.warning {
 	padding: 10px;
 	margin: 10px 0px 15px 0px;
 	box-shadow: 2px 2px 2px rgba(50,50,50,0.3);
+}
+div.info {
+	border-left: 6px solid #06C;
+	color: #06C; 
+	background-color: #333;
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px 0px 15px 0px;
+	box-shadow: 2px 2px 2px rgba(50,50,50,0.15);
 }
 div.success {
 	border: 1px solid #390;
