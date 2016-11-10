@@ -1224,3 +1224,10 @@ select.standardWidth {
 table.fullWidth {
 	width: 100% ;
 }
+
+/* V13 NEW CLASSES */
+td.wordWrap {
+	overflow-wrap: break-word;
+  	word-wrap: break-word; 
+  	word-break: break-word;
+}
