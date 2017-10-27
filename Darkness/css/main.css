@@ -1270,13 +1270,10 @@ p.emphasis, span.emphasis {
 span.small {
 	font-size: 90% ;
 }
-input.standardWidth, textarea.standardWidth {
+input.standardWidth, textarea.standardWidth, select.standardWidth, div.standardWidth {
 	width: 300px ;
 }
-select.standardWidth {
-	width: 302px ;
-}
-table.fullWidth {
+.fullWidth {
 	width: 100% ;
 }
 div.blockOuter {
