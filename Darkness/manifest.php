@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //Basic variables
 $name="Darkness" ;
 $description="A dark version of Gibbon's 2015 look and feel...just for dark loving teens." ;
-$version="1.3.00" ;
+$version="1.4.00" ;
 $author="Ross Parker" ;
 $url="http://rossparker.org" ;
 ?>

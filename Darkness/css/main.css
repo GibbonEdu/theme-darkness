@@ -518,6 +518,9 @@ table th {
 	background: -moz-linear-gradient(top,  #000,  #181818);
 	text-align: left;
 }
+table .heading td:not(:first-child) {
+	border-left: 0px;
+}
 table tr:first-child th:first-child {
 	-moz-border-radius-topleft:3px;
 	-webkit-border-top-left-radius:3px;
@@ -632,6 +635,7 @@ table.smallIntBorder tr.break td {
 }
 table.smallIntBorder tr.break td h3 {
 	margin-top: 10px!important;
+	padding: 0;
 }
 table.smallIntBorder h3, table.smallIntBorder h4 {
 	border: none!important;
@@ -692,6 +696,11 @@ input[type="text"], input[type="password"] {
 input[readonly], textarea[readonly], select[readonly] {
 	border: none;
 	background: none;
+}
+
+textarea[readonly] {
+    font-family: inherit;
+    resize: none;
 }
 
 textarea {
@@ -802,7 +811,6 @@ div.message a:hover {
 }
 
 div.error {
-	border: 1px solid #CC0000;
 	border-left: 6px solid #CC0000;
 	color: #CC0000;
 	background-color: #333;
@@ -812,7 +820,6 @@ div.error {
 	box-shadow: 2px 2px 2px rgba(50,50,50,0.3);
 }
 div.warning {
-	border: 1px solid #D65602;
 	border-left: 6px solid #D65602;
 	color: #D65602;
 	background-color: #333;
@@ -822,7 +829,6 @@ div.warning {
 	box-shadow: 2px 2px 2px rgba(50,50,50,0.3);
 }
 div.success {
-	border: 1px solid #390;
 	border-left: 6px solid #390;
 	color: #390;
 	background-color: #333;
@@ -831,6 +837,7 @@ div.success {
 	margin: 10px 0px 15px 0px;
 	box-shadow: 2px 2px 2px rgba(50,50,50,0.3);
 }
+
 div.paginationTop {
 	text-align: right;
 	font-size: 12px;
@@ -937,6 +944,7 @@ div#ui-datepicker-div {
     margin:6px 0px 0px 5px;
     float:right;
     text-align: right;
+	font-size: 12px;
 }
 
 .LV_valid {
@@ -1257,6 +1265,11 @@ table.colorOddEven tr:nth-of-type(even) td {
 	background: linear-gradient(center top , #F2F2F2, #F0F0F0);
 }
 
+/* Forms - ignore the colorOddEven stripe on footer */
+form table.colorOddEven tr:last-of-type td {
+	background: #fbfbfb;
+}
+
 /* v13 NEW CLASSES */
 td.wordWrap {
 	overflow-wrap: break-word;
@@ -1313,19 +1326,28 @@ select[multiple] {
 	width: 70px;
 }
 
-.column div:after {
+.column > div:after {
   content: "";
   display: table;
   clear: both;
 }
 
+.column.inline {
+	white-space: nowrap;
+}
+
 .column.inline div {
 	display:inline-block;
 	width:auto;
+	vertical-align: middle;
 }
 
 .column.stacked div:not(:last-of-type) {
     margin-bottom: 10px;
+}
+
+.formTable .standardWidth {
+    width: auto;
 }
 
 .formTable input,
@@ -1422,6 +1444,10 @@ input[name*="phone"] ~ .LV_invalid {
 	line-height: 22px;
 }
 
+.floatRight {
+	float: right;
+}
+
 .floatNone {
 	float:none;
 }
@@ -1432,10 +1458,86 @@ input[name*="phone"] ~ .LV_invalid {
     font-size: 11px;
 }
 
-
 #content .smallIntBorder {
   max-width: 752px;
 }
 #content-wide .smallIntBorder {
   max-width: 1052px;
+}
+
+.matchHighlight > td {
+	border-top: 1px dashed #c00;
+	border-bottom: 1px dashed #c00;
+}
+
+.matchHighlightText {
+	color: #e00;
+}
+
+tr.head td {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.right {
+	text-align: right!important;
+}
+
+.textCenter {
+	text-align: center!important;
+}
+
+/* Hide breadcrumbs in fullscreen */
+#TB_window .trail {
+	display: none;
+}
+
+.ttDates {
+	height: 80px;
+	width: 8%;
+	vertical-align: top;
+	font-size: 10px;
+}
+
+td.standardWidth {
+	position: relative;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	padding: 0px 6px;
+}
+
+input[type="button"].alignRight {
+	position: absolute;
+	right: 5px;
+	margin: 0;
+}
+
+fieldset {
+	border: 0;
+}
+
+.displayInlineBlock {
+    display: inline-block;
+}
+
+/* Fixes an odd colspan-related width bug in Chrome */
+td.fullWidth {
+    width: auto;
+}
+
+/* Utility classes - will be part of the larger css refactor soon */
+.noMargin {
+    margin: 0 !important; 
+}
+
+.noPadding,
+table.smallIntBorder td.noPadding {
+    padding: 0!important; 
+}
+
+.noBorder {
+    border: 0!important; 
 }
